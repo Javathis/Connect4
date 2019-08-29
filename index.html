@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQuery has to run before the .js files -->
+</head>
+  <body>
+    <h1>Connect 4!</h1>
+    <div class="gameScreenWrapper">
+      <div class="outside"></div>
+
+      <div id="connect4"></div>
+
+       <div id="winning-msg">
+          Congrats!
+      </div> 
+
+      <div class="outside container">
+        <h4>It's <span id="player">red</span>'s turn!</h4>
+        <div>
+            <div><h4>Score</h4></div>
+            <div class="scoreboardred" id="scoreboardred"></div>
+            <div class="scoreboardblack" id="scoreboardblack"></div>
+            <button id="restart">Restart</button>
+         </div>
+      </div>
+    </div>
+    <script src="connect4.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

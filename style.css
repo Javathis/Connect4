@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    height: 100vh;
+    background-image: url("./assets/jamshed-khedri-DX2tuFcHHeg-unsplash.jpg")
+}
+
+h1 {
+    color: white;
+}
+
+#connect4 {
+    background-color: grey;
+    box-shadow: 14px -15px 21px 2px rgba(0, 0, 0, 0.79);
+    padding: 20px;
+    border-radius: 20px;
+    /* to make the coin slots round */
+    margin-bottom: 50px
+    /* to have 50px space of the game itself to the bottom of the page */
+}
+
+.gameScreenWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.col {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.col.empty {
+    cursor: pointer;
+}
+
+.next-red {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.next-black {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.col.red {
+    background-color: red;
+}
+
+
+.col.black {
+    background-color: black;
+}
+
+.outside {
+    width: 10vw;
+}
+
+.container {
+    /* flex-diredispction: row; */
+    /* display: flex; */
+    flex-direction: column;
+    flex-basis: auto
+}
+
+#winning-msg {
+    top:50%;
+    transform: translate(0, -50%);
+    display: none;
+    height: 150px;
+    position: absolute;
+    color: pink;
+    font-size: 100px;
+}
